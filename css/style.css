@@ -133,6 +133,7 @@ a:focus, a:hover {
 	display: block;
 	text-align: center;
 	width: 100%;
+	margin-left: 15%
 }
 
 .ch-grid:after, .ch-item:before {
