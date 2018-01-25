@@ -3,14 +3,18 @@
     height: 100%;
     width: 100%;
     position: absolute;
+    display:flex;
 }
 
 .header {
-    height: 10%;
-    width: 40%;
-    margin-top: 20%;
-    margin-left: 30%;
-    border: solid 2px ;
-    text-align: center;
+    margin: auto;
+    border: solid 2px;
     color: rgb(202, 146, 5);
+    text-align:center;
+    padding: 2% 5%;
+    font-size: 500%;
+}
+
+.title {
+    font-size: 40%
 }
