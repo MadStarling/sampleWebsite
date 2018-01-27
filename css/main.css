@@ -42,7 +42,7 @@
     float: right;
 }
 
-@media only screen and (max-width: 1000px){
+@media all and (max-width: 880px){
     .header h1 {
         letter-spacing: initial;
         font-size: xx-large;
@@ -53,5 +53,11 @@
 
     .header span {
         display: inline-block;
+    }
+
+    @media all and (orientation: landscape){
+        .header h1 {
+            padding: 45px 0px;
+        }
     }
 }
