@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A personal website",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MadStarling/sampleWebsite.git"
+  },
+  "author": "madStarling <starling.damasio@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MadStarling/sampleWebsite/issues"
+  },
+  "homepage": "https://github.com/MadStarling/sampleWebsite#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1"
+  }
+}
