@@ -13,11 +13,24 @@
 
         <!-- JS -->
         <script src="bower_components/angular/angular.js"></script>
+        <script src="js/main.js"></script>
 
-    <body ng-app="portfolio">
+    <body ng-app="app">
         <div class="header" ng-controller="HeaderController as controller">
-                <h1>madStarling</h1>
-                <h2> - <span>Developer by passion</span> - </h2>
+                <h1>{{title}}</h1>
+                <h2> - <span>{{subtitle}}</span> - </h2>
+
+                <nav class="menu">
+                    <a class="item" href="#">
+                        <img src="images/contact.svg" width="30" height="30" alt="">
+                    </a>
+                    <a class="item" href="#">
+                        <img src="images/about.svg" width="30" height="30" alt="">
+                    </a>
+                    <a class="item" href="#">
+                        <img src="images/home.svg" width="30" height="30" alt="">
+                    </a>    
+                </nav>"
         </div>
     </body>
 
