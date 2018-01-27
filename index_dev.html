@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Why so serious?</title>
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css">
+
+        <!-- JS -->
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="js/main.js"></script>
+
+    <body ng-app="app">
+        <div class="header" ng-controller="HeaderController as controller">
+                <h1>{{title}}</h1>
+                <h2> - <span>{{subtitle}}</span> - </h2>
+
+                <nav class="menu">
+                    <a class="item" href="#">
+                        <img src="images/contact.svg" width="30" height="30" alt="">
+                    </a>
+                    <a class="item" href="#">
+                        <img src="images/about.svg" width="30" height="30" alt="">
+                    </a>
+                    <a class="item" href="#">
+                        <img src="images/home.svg" width="30" height="30" alt="">
+                    </a>    
+                </nav>"
+        </div>
+    </body>
+
+</html>
