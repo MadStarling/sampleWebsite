@@ -5,6 +5,10 @@
     background-image: url('../images/brushed-alum.png');
 }
 
+.header.navbar {
+    height: 10vh;
+}
+
 .header h1 {
     position: absolute;
 	top: 20%;
@@ -17,6 +21,15 @@
 	color: #ffd700;
     border: 5px solid #ffd700;
     text-align: center;
+}
+
+.header.navbar h1 {
+    top: initial;
+    width: 8%;
+    height: 75%;
+    margin: 1%;
+    font-size: x-large;
+    padding: 0;
 }
 
 .header h2 {
@@ -34,13 +47,21 @@
     text-align: center;
 }
 
+.header.navbar h2 {
+    display: none;
+}
+
 .menu {
-    padding: 1%;
+    padding: 2%;
 }
 
 .item {
     margin-right: 2%;
     float: right;
+}
+
+.content {
+    
 }
 
 @media all and (max-width: 880px){

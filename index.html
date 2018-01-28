@@ -13,24 +13,22 @@
 
         <!-- JS -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="js/main.js"></script>
 
     <body ng-app="app">
-        <div class="header" ng-controller="HeaderController as controller">
-                <h1>{{title}}</h1>
-                <h2> - <span>{{subtitle}}</span> - </h2>
+        <div class="header" ng-class="{navbar: getPage() > 0}" ng-controller="HeaderController as controller">
+                <h1 ng-bind="title"></h1>
+                <h2> - <span ng-bind="subtitle"></span> - </h2>
 
                 <nav class="menu">
-                    <a class="item" href="#">
-                        <img src="images/contact.svg" width="30" height="30" alt="">
+                    <a class="item" ng-repeat="item in menuItems" href="#">
+                        <img src="{{item.src}}" width="30" height="30" ng-click="changePage(item.index)">
                     </a>
-                    <a class="item" href="#">
-                        <img src="images/about.svg" width="30" height="30" alt="">
-                    </a>
-                    <a class="item" href="#">
-                        <img src="images/home.svg" width="30" height="30" alt="">
-                    </a>    
                 </nav>"
+        </div>
+        <div class="content">
+
         </div>
     </body>
 
