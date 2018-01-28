@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
       concat: {
         dist: {
-            src: ['js/src/*.js'],
+            src: ['bower_components/angular/angular.min.js', 'bower_components/jquery/dist/jquery.min.js', 'js/src/*.js'],
             dest: 'js/main.js',
           }
       }
