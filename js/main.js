@@ -341,6 +341,15 @@ minFrac:2,minInt:1,negPre:"-\u00a4",negSuf:"",posPre:"\u00a4",posSuf:""}]},id:"e
 
 var app = angular.module('app', []);
 
+app.controller('ContentController', function($scope){
+    $scope.watch($('.navbar').lenght, function(newValue) {
+        if(newValue === 0){
+            $('.content').css('display', 'none')            
+        }
+    })
+});
+var app = angular.module('app', []);
+
 app.controller('HeaderController', function($scope){
     $scope.title = 'madStarling';
     $scope.subtitle = 'Developer by passion';

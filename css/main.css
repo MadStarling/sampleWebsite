@@ -63,7 +63,7 @@
 }
 
 .content {
-    
+    background-color: bisque;
 }
 
 @media all and (max-width: 880px){
