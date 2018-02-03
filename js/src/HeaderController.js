@@ -1,10 +1,9 @@
-var app = angular.module('app', []);
-
 app.controller('HeaderController', function($scope){
     $scope.title = 'madStarling';
     $scope.subtitle = 'Developer by passion';
 
     $scope.pageIndex = 0;
+    window.showContent = false;
 
     $scope.menuItems = [
         {
@@ -27,6 +26,8 @@ app.controller('HeaderController', function($scope){
 
     $scope.changePage = function(newIndex) {
         $scope.pageIndex = newIndex;
+
+        window.showContent = newIndex === 0 ? false : true;
     };
 
     $scope.$watch('pageIndex', function(newIndex) {

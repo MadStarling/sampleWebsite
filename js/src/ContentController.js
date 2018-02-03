@@ -1,9 +1,11 @@
-var app = angular.module('app', []);
-
 app.controller('ContentController', function($scope){
-    $scope.watch($('.navbar').lenght, function(newValue) {
-        if(newValue === 0){
-            $('.content').css('display', 'none')            
+    $scope.$watch(function() {
+        return window.showContent;
+    }, function(newValue) {
+        if(!newValue){
+            $('.content').css('display', 'none');           
+        } else {
+            $('.content').css('display', 'initial');
         }
     })
 });
