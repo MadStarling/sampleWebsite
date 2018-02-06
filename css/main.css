@@ -79,6 +79,8 @@
     background: white;
     width: 50%;
     margin-left: 25%;
+    height: 80%;
+    padding: 3%;
 }
 
 @media all and (max-width: 880px){
