@@ -29,12 +29,4 @@ app.controller('HeaderController', function($scope){
 
         window.showContent = newIndex === 0 ? false : true;
     };
-
-    $scope.$watch('pageIndex', function(newIndex) {
-        if (newIndex > 0) {
-            $scope.title = 'mS';
-        } else {
-            $scope.title = 'madStarling'
-        }
-    });
 });

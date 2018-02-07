@@ -23,17 +23,12 @@
 	color: #ffd700;
     border: 5px solid #ffd700;
     text-align: center;
+    transition: opacity 1s;
+    opacity: 1;
 }
 
 .header.navbar h1 {
-    top: initial;
-    width: 8%;
-    height: 75%;
-    margin: 1%;
-    font-size: x-large;
-    padding: 0;
-    transition: height 1s, width 1s;
-    display: none;
+    opacity: 0;
 }
 
 .header h2 {
@@ -49,10 +44,12 @@
 	font-weight: 700;
     color: #ffd700;
     text-align: center;
+    transition: opacity 1s;
+    opacity: 1;
 }
 
 .header.navbar h2 {
-    display: none;
+    opacity: 0;
 }
 
 .menu {
@@ -79,8 +76,9 @@
     background: white;
     width: 50%;
     margin-left: 25%;
-    height: 80%;
     padding: 3%;
+    border-radius: 25px;
+    text-align: center;
 }
 
 @media all and (max-width: 880px){
