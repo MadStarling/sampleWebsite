@@ -29,6 +29,7 @@
 
 .header.navbar h1 {
     opacity: 0;
+    display: none;
 }
 
 .header h2 {
@@ -50,6 +51,7 @@
 
 .header.navbar h2 {
     opacity: 0;
+    display: none;
 }
 
 .menu {
