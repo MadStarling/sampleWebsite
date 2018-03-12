@@ -15,36 +15,17 @@
         <script src="js/main.js"></script>
 
     <body ng-app="app">
-        <div class="header" ng-class="{navbar: getPage() > 0}" ng-controller="HeaderController as controller">
+        <div class="header container-fluid" ng-class="{navbar: getPage() > 0}" ng-controller="HeaderController as controller">
                 <h1 ng-bind="title"></h1>
                 <h2> - <span ng-bind="subtitle"></span> - </h2>
 
-                <nav class="menu">
+                <nav class="navbar menu">
                     <a class="item" ng-repeat="item in menuItems" href="#">
                         <img src="{{item.src}}" width="30" height="30" ng-click="changePage(item.index)">
                     </a>
                 </nav>"
         </div>
         <div class="content" ng-controller="ContentController as controller">
-            <div class="modal" tabindex="-1" role="dialog">
-                <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    </div>
-                    <div class="modal-body">
-                    <p>Modal body text goes here.</p>
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-                </div>
-            </div>
             <div class="main">
                 <p>{{content}}</p>
             </div>
