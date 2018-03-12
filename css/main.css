@@ -6,7 +6,7 @@
     transition: height 1s;
 }
 
-.header.navbar {
+.header {
     height: 10vh;
     border-bottom: solid 1px black;
 }
